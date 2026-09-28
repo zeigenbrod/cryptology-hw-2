@@ -118,7 +118,7 @@ P(Z = 0) = 4(1/16) = 1/4
 
 P(Z = 00) = 1/16 because there is only one possible sequence (01 | 01).
 
-Different lengths do not have the same probability, so we need to condition L = k.
+Different lengths do not have the same probability.
 
 ## Problem 3
 
