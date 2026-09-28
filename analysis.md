@@ -1,4 +1,4 @@
-#HW 2 Analysis
+# HW 2 Analysis
 ## Zoe Eigenbrod
 
 ## Problem 1 
