@@ -61,7 +61,7 @@ The output is not balanced because there are no 0s.
 
 ## Problem 2
 
-(a)
+### (a)
 
 If we know that: 
 
@@ -83,8 +83,7 @@ P((1,0) | (1,0)+(0,1)) = p(1-p) / 2p(1-p)
 
 Simplified, becomes 1/2
 
-
-(b)
+### (b)
 
 Assuming the pairs are independent, and the bits within each pair are independent.
 
@@ -98,8 +97,7 @@ Given k accepted pairs, k bits have a 1/2 chance of being either 0 or 1. If k is
 
 P(Z = z | L = k) = (1/2)^k = 2^-k
 
-
-(c)
+### (c)
 
 We must condition L = k to account for different output lengths based on accepted pairs present.
 
@@ -115,6 +113,7 @@ For a 0 output, there are 4 possible sequences:
 (11 | 01)
 
 So,
+
 P(Z = 0) = 4(1/16) = 1/4
 
 P(Z = 00) = 1/16 because there is only one possible sequence (01 | 01).
@@ -123,7 +122,7 @@ Different lengths do not have the same probability, so we need to condition L = 
 
 ## Problem 3
 
-### Derive the probability of output bit = 1 given accepted
+### Derive probability of output bit = 1
 
 P(0,1) = (1-p)q
 P(1,0) = p(1-q)
@@ -170,10 +169,8 @@ The output is not uniform.
 
 For the emitted bits to be considered equal the bits must be as follows:
 
-p = 0, q = 1
-
+p = 0, q = 1 
 or
-
 p = 1, q = 0
 
 ## Problem 4
@@ -196,12 +193,11 @@ Because each bit has a 3/4 probability to be a repeat, and a 1/4 probability to 
 Meaning every X_i is fair.
 
 
-
-Probability of 01:
+### Probability of 01:
 
 P(01) = P(Xi-1 = 0)(1/4) = 1/8
 
-Probability of 10:
+### Probability of 10:
 
 P(10) = P(Xi-1 = 1)(1/4) = 1/8
 
@@ -218,6 +214,7 @@ There are four possible 4-bit strings where both pairs are accepted:
 1010 -> 10 | 10 -> 11
 
 1/2 probability for the first bit, 3/4 for repeat, and 1/4 for changing bit:
+
 P(0101) = (1/2)(1/4)(1/4)(1/4) = 1/128
 
 P(0110) = (1/2)(1/4)(3/4)(1/4) = 3/128
@@ -274,8 +271,6 @@ Yield < H(p) due to invalid bits being discarded.
 A rejected 00 means two 0s occured in a row.
 
 ## Problem 6
-
-### Show that some X makes f(X) constant
 
 If there are 2^n inputs possible, with 2 possible outputs (0/1), that means at least half of the inputs have the same output, as shown below:
 
